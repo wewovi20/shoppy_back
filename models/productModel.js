@@ -38,8 +38,8 @@ var productSchema = new mongoose.Schema(
         url: String,
       },
     ],
-    color: [],
-    tags: {
+  
+    inventoryStatus: {
       type: String,
       default: 'INSTOCK'
     },
