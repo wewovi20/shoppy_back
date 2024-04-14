@@ -39,7 +39,10 @@ var productSchema = new mongoose.Schema(
       },
     ],
     color: [],
-    tags: String,
+    tags: {
+      type: String,
+      default: 'INSTOCK'
+    },
     ratings: [
       {
         star: Number,
